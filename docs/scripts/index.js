@@ -1,0 +1,1 @@
+webpackJsonp([0],{"./app/scripts/index.js":function(s,e,p){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=p("./app/styles/main.scss");p.n(n)},"./app/styles/main.scss":function(s,e){}},["./app/scripts/index.js"]);
