@@ -21,13 +21,13 @@ $hower_and_button_color: rgb(255, 234, 42);
                     color: $top_header_text_color;
                 }
                 .logo_main_text {
-                    font-size: 1.4em;
+                    font-size: 1.4rem;
                     font-weight: 800;
                     line-height: 1.2;
                 }
             }
             .logo_quote_text {
-                font-size: .37em;
+                font-size: .37rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
             }
@@ -45,7 +45,7 @@ $hower_and_button_color: rgb(255, 234, 42);
                     a {
                         align-self: center;
                         height: 100%;
-                        font-size: .5em;
+                        font-size: .5rem;
                         font-weight: bold;
                         color: $top_header_text_color;
                         text-decoration: none;
@@ -65,24 +65,24 @@ $hower_and_button_color: rgb(255, 234, 42);
         .main_center_text_element_big {
             margin: 10vh 0;
             font-weight: bold;
-            font-size: 1.4em;
+            font-size: 1.4rem;
         }
         .main_center_text_element_medium {
             text-transform: uppercase;
-            font-size: .54em;
+            font-size: .54rem;
             font-weight: bold;
             margin: 7vh 0;
         }
         .main_center_text_element_small {
             color: #ddd;
-            font-size: .43em;
+            font-size: .43rem;
             margin: 10vh 0;
             font-weight: bold;
         }
         .action_button {
             border: 0;
             border-radius: 3px;
-            font-size: .4em;
+            font-size: .4rem;
             padding: 10px 30px;
             font-weight: 800;
             background-color: $hower_and_button_color;
@@ -111,12 +111,12 @@ $hower_and_button_color: rgb(255, 234, 42);
                 }
                 .bottom_logo_main_text {
                     line-height: 1.2;
-                    font-size: 1.3em;
+                    font-size: .9rem;
                     font-weight: 800;
                 }
             }
             .bottom_logo_quote_text {
-                font-size: .33em;
+                font-size: .2rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
             }
@@ -127,7 +127,7 @@ $hower_and_button_color: rgb(255, 234, 42);
                 height: 100%;
                 margin-left: auto;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 list-style-type: none;
                 .bottom_nav_menu_element {
@@ -137,7 +137,7 @@ $hower_and_button_color: rgb(255, 234, 42);
                         border-radius: 3px;
                         align-self: center;
                         height: 100%;
-                        font-size: .33em;
+                        font-size: .4rem;
                         font-weight: bold;
                         color: $bottom_header_text_color;
                         text-decoration: none;
