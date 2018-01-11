@@ -4,51 +4,64 @@ $main_text_color: #fff;
 $hower_and_button_color: rgb(255, 234, 42);
 
 .header_content_container {
+    
+    // COMMON STYLES
+    .logo_container {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_menu {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    .nav_menu_element {
+        a {
+            align-self: center;
+            height: 100%;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    // COMON STYLES END
+
     background: url('../images/main_bg.jpg') center top no-repeat;
     background-size: cover;
     background-attachment: fixed;
     .top_header_not_fixed {
+        flex-wrap: wrap;
         padding: 4vh 4vw;
         display: flex;
         justify-content: space-between;
-        .logo_container {
-            width: 33%;
+        .top_logo_container {
             color: $top_header_text_color;
-            display: flex;
-            flex-direction: row;
             .inner_logo_container {
                 a {
                     color: $top_header_text_color;
                 }
                 .logo_main_text {
-                    font-size: 1.4rem;
+                    font-size: 2rem;
                     font-weight: 800;
                     line-height: 1.2;
                 }
             }
             .logo_quote_text {
-                font-size: .37rem;
+                font-size: .55rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
             }
         }
         nav.nav_menu_container {
             width: 50%;
-            ul.nav_menu {
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-                list-style-type: none;
-                align-items: center;
-                li.nav_menu_element {
+            ul.top_nav_menu {
+
+                li.top_nav_menu_element {
                     display: flex;
                     a {
-                        align-self: center;
-                        height: 100%;
-                        font-size: .5rem;
-                        font-weight: bold;
+                        font-size: .8rem;
                         color: $top_header_text_color;
-                        text-decoration: none;
                         transition: .3s color;
                         &:hover {
                             color: $hower_and_button_color;
@@ -65,25 +78,25 @@ $hower_and_button_color: rgb(255, 234, 42);
         .main_center_text_element_big {
             margin: 10vh 0;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 2.7rem;
         }
         .main_center_text_element_medium {
             text-transform: uppercase;
-            font-size: .54rem;
+            font-size: 1rem;
             font-weight: bold;
             margin: 7vh 0;
         }
         .main_center_text_element_small {
             color: #ddd;
-            font-size: .43rem;
+            font-size: .8rem;
             margin: 10vh 0;
             font-weight: bold;
         }
         .action_button {
             border: 0;
-            border-radius: 3px;
-            font-size: .4rem;
-            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: .8rem;
+            padding: 3vh 5vw;
             font-weight: 800;
             background-color: $hower_and_button_color;
             color: #000;
@@ -95,28 +108,31 @@ $hower_and_button_color: rgb(255, 234, 42);
             }
         }
     }
+    .fixed_header {
+        width: 92%;
+        position: fixed;
+        top: 0;
+    }
     .bottom_header {
+        box-shadow: 0 2px 2px #eee;
         padding: 2vh 4vw;
         background: #fff;
         display: flex;
         justify-content: space-between;
         .bottom_logo_container {
-            width: 33%;
             color: $bottom_header_text_color;
-            display: flex;
-            flex-direction: row;
             .inner_bottom_logo_container {
                 a {
                     color: $bottom_header_text_color;
                 }
                 .bottom_logo_main_text {
                     line-height: 1.2;
-                    font-size: .9rem;
+                    font-size: 1.5rem;
                     font-weight: 800;
                 }
             }
             .bottom_logo_quote_text {
-                font-size: .2rem;
+                font-size: .4rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
             }
@@ -124,23 +140,13 @@ $hower_and_button_color: rgb(255, 234, 42);
         nav.bottom_nav_menu_container {
             width: 50%;
             ul.bottom_nav_menu {
-                height: 100%;
-                margin-left: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                list-style-type: none;
                 .bottom_nav_menu_element {
                     display: flex;
                     a {
                         padding: 8px 14px;
                         border-radius: 3px;
-                        align-self: center;
-                        height: 100%;
-                        font-size: .4rem;
-                        font-weight: bold;
+                        font-size: .7rem;
                         color: $bottom_header_text_color;
-                        text-decoration: none;
                         transition: .3s;
                         &:hover {
                             color: #fff;

@@ -6,8 +6,18 @@ a {
     text-decoration: none;
 }
 html {
-    font-size: calc( 16px + (24 - 16) * (100vw - 360px) / (800 - 360) );
-}
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  }
 
 * {
     font-family: 'Work Sans', sans-serif;
