@@ -28,7 +28,7 @@ html {
   }
   @media screen and (min-width: 320px) {
     html {
-      font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+      font-size: calc(14px + 6 * ((100vw - 200px) / 680));
     }
   }
   @media screen and (min-width: 1000px) {
@@ -39,6 +39,7 @@ html {
 
 * {
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 

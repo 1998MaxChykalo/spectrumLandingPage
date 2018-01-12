@@ -1,0 +1,79 @@
+$navigation_button_background_color_on_hover: rgb(30, 44, 240);
+
+#testimonials {
+    background: url('./../images/testimonials_bg.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0 15vw;
+    @media  (max-width: 768px) {
+        padding: 0 3vw;
+    }
+    .testimonials_container {
+        position: relative;
+        .prev,
+        .next {
+            position: absolute;
+            display: inline-block;
+            display: flex;
+            font-size: .8rem;
+            justify-content: center;
+            align-items: center;
+            color: #777;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: .3s;
+            &:hover {
+                cursor: pointer;
+                background: $navigation_button_background_color_on_hover;
+            }
+        }
+        .prev {
+            top: 50%;
+            left: 0px;
+        }
+        .next {
+            top: 50%;
+            right: 0px;
+        }
+        .testimonials_main_text {
+            padding: 10vh 0;
+            p {
+                text-align: center;
+                font-size: 2.5rem;
+                word-wrap: break-word;
+                font-weight: 800;
+            }
+        }
+        .testimonials_slider_container {
+            max-width: 100%;
+            overflow: hidden;
+            .slider_visible_part {
+                width: 300%;
+                display: flex;
+                justify-content: space-around;
+                .slider_element_container {
+                    text-align: center;
+                    color: #777;
+                    font-weight: bold;
+                    font-size: .8rem;
+                    line-height: 1.5;
+                    .image_container {
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .feedback_container {
+                        margin: 5vh 0;
+                    }
+                    .name_container {
+                        margin: 5vh 0;
+                        .name {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

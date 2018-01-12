@@ -11,7 +11,7 @@ $statistic_container_background_color: #282232;
     }
     .statistics_advantages_container {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
         justify-content: space-between;
         .advantage_container {
@@ -29,6 +29,12 @@ $statistic_container_background_color: #282232;
                 color: #fff;
                 font-weight: 300;
             }
+        }
+        .contact_button_container {
+            padding: 5vh 1vw 10vh 1vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
     }
 }

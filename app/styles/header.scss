@@ -34,9 +34,12 @@ $hower_and_button_color: rgb(255, 234, 42);
         flex-wrap: wrap;
         padding: 4vh 4vw;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         .top_logo_container {
             color: $top_header_text_color;
+            flex: 1;
+            padding: 2vh 2vw;
             .inner_logo_container {
                 a {
                     color: $top_header_text_color;
@@ -54,9 +57,12 @@ $hower_and_button_color: rgb(255, 234, 42);
             }
         }
         nav.nav_menu_container {
-            width: 50%;
+            // width: 50%;
+            flex: 2;
             ul.top_nav_menu {
-
+                display: flex;
+                flex-direction: row;
+                // flex-wrap: wrap;
                 li.top_nav_menu_element {
                     display: flex;
                     a {
@@ -94,48 +100,52 @@ $hower_and_button_color: rgb(255, 234, 42);
         }
     }
     .fixed_header {
-        width: 92%;
+        z-index: 100;
+        width: 100%;
         position: fixed;
         top: 0;
     }
     .bottom_header {
+        max-width: 100%;
+        overflow: hidden;
         box-shadow: 0 2px 2px #eee;
-        padding: 2vh 4vw;
         background: #fff;
-        display: flex;
-        justify-content: space-between;
-        .bottom_logo_container {
-            color: $bottom_header_text_color;
-            .inner_bottom_logo_container {
-                a {
-                    color: $bottom_header_text_color;
-                }
-                .bottom_logo_main_text {
-                    line-height: 1.2;
-                    font-size: 1.5rem;
-                    font-weight: 800;
-                }
-            }
-            .bottom_logo_quote_text {
-                font-size: .4rem;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-        }
-        nav.bottom_nav_menu_container {
-            width: 50%;
-            ul.bottom_nav_menu {
-                .bottom_nav_menu_element {
-                    display: flex;
+        .bottom_header_container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2vh 4vw;
+            .bottom_logo_container {
+                color: $bottom_header_text_color;
+                .inner_bottom_logo_container {
                     a {
-                        padding: 8px 14px;
-                        border-radius: 3px;
-                        font-size: .7rem;
                         color: $bottom_header_text_color;
-                        transition: .3s;
-                        &:hover {
-                            color: #fff;
-                            background: rgb(30, 44, 240);
+                    }
+                    .bottom_logo_main_text {
+                        line-height: 1.2;
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                    }
+                }
+                .bottom_logo_quote_text {
+                    font-size: .4rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+            nav.bottom_nav_menu_container {
+                ul.bottom_nav_menu {
+                    .bottom_nav_menu_element {
+                        display: flex;
+                        a {
+                            padding: 8px 14px;
+                            border-radius: 3px;
+                            font-size: .7rem;
+                            color: $bottom_header_text_color;
+                            transition: .3s;
+                            &:hover {
+                                color: #fff;
+                                background: rgb(30, 44, 240);
+                            }
                         }
                     }
                 }

@@ -1,6 +1,7 @@
 
-$(window).on('scroll',function() {myFunction()});
-
+var _ = require('./lodash');
+$(window).on('scroll', _.debounce(checkHeader,300));
+// $(window).on('scroll', checkHeader);
 $(window).resize(
     function() {
         header = $(".bottom_header");
@@ -10,7 +11,7 @@ $(window).resize(
 var header = $(".bottom_header");
 var sticky = header.offset();
 
-function myFunction() {
+function checkHeader() {
   if ($(window).scrollTop() >= sticky.top) {
     header.addClass("fixed_header");
     adjustWidth();
@@ -18,8 +19,8 @@ function myFunction() {
     header.removeClass("fixed_header");
   }
 }
-// 109
+
 function adjustWidth() {
     var parentwidth = $("body").width();
-    $(".fixed_header").width(parentwidth*.92);
+    $(".fixed_header").width(parentwidth);
   }
