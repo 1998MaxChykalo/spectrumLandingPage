@@ -1,0 +1,44 @@
+#steps_solution {
+    padding: 0 4vw;
+    .steps_solution_container {
+        .steps_solution_main_text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin: 10vh 0;
+        }
+        .steps_container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .step_element_container {
+                display: flex;
+                flex-basis: 33.333%;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 2vw;
+                @media (max-width: 640px) {
+                    flex-basis: 100%;
+                }
+                .step_image {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+                .step_count_text {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    margin: 5vh 0;
+                }
+                .description_of_step {
+                    margin-bottom: 5vh;
+                    word-wrap: break-word;
+                    font-size: .7rem;
+                    line-height: 1.5;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
