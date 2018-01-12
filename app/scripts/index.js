@@ -1,3 +1,5 @@
+
+import './../styles/steps_solution.scss'
 import './../styles/testimonials.scss'
 import './../styles/statistics.scss'
 
