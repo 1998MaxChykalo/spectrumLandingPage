@@ -1,3 +1,21 @@
+$contact_button_color: rgb(255, 234, 42);
+
+.contact_button {
+  border: 0;
+  border-radius: 5px;
+  font-size: .8rem;
+  padding: 3vh 5vw;
+  font-weight: 800;
+  background-color: $contact_button_color;
+  color: #000;
+  transition: .3s;
+  &:hover {
+      color: #fff;
+      background: #979797;
+      cursor: pointer;
+  }
+}
+
 p {
     margin: 0;
 }

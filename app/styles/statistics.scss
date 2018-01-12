@@ -1,0 +1,34 @@
+$statistic_advantage_number_color: rgb(255, 234, 42);
+$statistic_container_background_color: #282232;
+.statistics_container {
+    background: $statistic_container_background_color;
+    padding: 0 7vw;
+    .statistics_main_text {
+        padding: 10vh 0 5vh 0;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    .statistics_advantages_container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .advantage_container {
+            padding: 5vh 1vw 10vh 1vw;
+            .advantage_number {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: $statistic_advantage_number_color;
+                letter-spacing: 1vw;
+                line-height: 1.5;
+            }
+            .advantage_name {
+                line-height: 1.5;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+    }
+}
