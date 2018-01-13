@@ -1,5 +1,24 @@
 $contact_button_color: rgb(255, 234, 42);
 
+.black_bordered_button {
+  display: inline-block;
+  background: #fff;
+  text-decoration: none;
+  color: #333;
+  font-size: .9rem;
+  padding: 10px 40px;
+  font-weight: bold;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 5vh 0;
+  transition: .3s;
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+  }
+}
+
 .contact_button {
   border: 0;
   border-radius: 5px;
@@ -28,7 +47,7 @@ html {
   }
   @media screen and (min-width: 320px) {
     html {
-      font-size: calc(14px + 6 * ((100vw - 200px) / 680));
+      font-size: calc(16px + 6 * ((100vw - 200px) / 680));
     }
   }
   @media screen and (min-width: 1000px) {

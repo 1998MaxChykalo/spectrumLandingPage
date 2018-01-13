@@ -1,0 +1,69 @@
+#pricing {
+    .pricing_container {
+        padding: 5vh 6vw;
+        .pricing_plan_main_text {
+            text-align: center;
+            font-size: 2.7rem;
+            font-weight: bold;
+        }
+        .pricing_plan_container {
+            margin-top: 10vh;
+            display: grid;
+            grid-gap: 5vh 3vw;
+            grid-template-columns: 1fr 1fr 1fr;
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+            .pricing_plan_element {
+                border: 1px solid #000;
+                &:nth-child(2) {
+                    .plan_count {
+                        background: rgb(252, 255, 80);
+                    }
+                }
+                .plan_count {
+                    padding: 5vh 0;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 600;
+                    align-items: center;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    background: rgb(237, 237, 237);
+                }
+                .pricing_plan_advantages {
+                    padding: 6vh 3vw;
+                    ul {
+                        list-style: none;
+                        li {
+                            margin-top: 3vh;
+                            font-size: .6em;
+                            position: relative;
+                            color: #888;
+                            &:before {                                
+                                content: '✓ ';
+                                color: rgb(255, 196, 0);
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+                .pricing_plan_price {
+                    padding: 5vh 0;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 600;
+                    align-items: center;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    background: rgb(237, 237, 237);
+                }
+                .pricing_plan_order_button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: stretch;
+                }
+            }
+        }
+    }
+}

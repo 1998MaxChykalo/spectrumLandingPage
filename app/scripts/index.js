@@ -1,4 +1,6 @@
 
+import './../styles/pricing.scss'
+
 import './../styles/clients.scss'
 import './../styles/steps_solution.scss'
 import './../styles/testimonials.scss'
