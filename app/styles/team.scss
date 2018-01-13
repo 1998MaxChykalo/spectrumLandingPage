@@ -18,6 +18,8 @@
             .employee_element {
                 margin-bottom: 10vh;
                 .employee_image_container {
+                    display: flex;
+                    justify-content: center;
                     img {
                         max-width: 100%;
                         border-radius: 5px;
@@ -29,7 +31,6 @@
                         .name {
                             text-transform: uppercase;
                             font-weight: 700;
-
                         }
                         .position {
                             font-size: .7rem;

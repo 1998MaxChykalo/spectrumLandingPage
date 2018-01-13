@@ -1,4 +1,5 @@
 
+import './../styles/featured_product.scss'
 import './../styles/team.scss'
 import './../styles/cv.scss'
 import './../styles/numbers.scss'
