@@ -16,7 +16,7 @@
                 }
             }
             .profile_container {
-                padding: 5vh 5vw;
+                padding: 0vh 5vw;
                 .main_info_container {
                     .name {
                         margin: 1vh 0;
@@ -29,7 +29,7 @@
                     }
                 }
                 .description_container {
-                    margin: 5vh 0;
+                    margin: 5vh 0 2vh 0;
                     .profile {
                         margin-bottom: 1vh;
                         text-transform: uppercase;
@@ -52,7 +52,7 @@
                             margin: 2vh 0;
                         }
                         .rank_container {
-                            width: 100%;
+                            width: 90%;
                             height: 20px;
                             border-radius: 25px;
                             position: relative;

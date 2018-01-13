@@ -1,0 +1,67 @@
+#team {
+    background: rgba(244,244,244,.9);
+    .team_container {
+        .section_main_text {
+            padding: 10vh 0;
+        }
+        .employees_container {
+            padding: 0 5vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5vh 3vw;
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (max-width: 360px) {
+                grid-template-columns: 1fr;
+            }
+            .employee_element {
+                margin-bottom: 10vh;
+                .employee_image_container {
+                    img {
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+                .employee_information_container {
+                    .main_ifnormation {
+                        margin: 4vh 0;
+                        .name {
+                            text-transform: uppercase;
+                            font-weight: 700;
+
+                        }
+                        .position {
+                            font-size: .7rem;
+                            color: #888;
+                            line-height: 1.5;
+                        }
+                    }
+                    .description {
+                        font-size: .7rem;
+                        line-height: 1.5;
+                        color: #777;
+                    }
+                    .social_container {
+                        display: flex;
+                        justify-content: flex-start;
+                        .social {
+                            margin: 10px;
+                            a {
+                                font-size: .7rem;
+                                color: #222;
+                                transition: color .3s;
+                                @media (max-width: 768px) {
+                                    font-size: 1.5rem;
+                                }
+                                &:hover {
+                                    color: rgb(139, 36, 199);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

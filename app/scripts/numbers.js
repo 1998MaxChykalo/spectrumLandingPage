@@ -21,6 +21,7 @@ $(function() {
         hours.text(getHours(totalSeconds));
         days.text(getDays(totalSeconds));
     }
+
     function getSeconds(totalSeconds) {
         return totalSeconds%60;
     }
@@ -36,5 +37,6 @@ $(function() {
     function getDays(totalSeconds) {
         return Math.floor(totalSeconds/(3600*24));
     }
+
     var interval = setInterval(calculateTime,1000);
 });
