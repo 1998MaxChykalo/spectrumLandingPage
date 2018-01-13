@@ -1,0 +1,43 @@
+
+$clients_container_background_color: #282232;
+
+#clients {
+    .clients_main_text {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 5vh 0;
+        text-align: center;
+    }
+    .clients_container {
+        background-color: #282232;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 360px) {
+            grid-template-columns: 1fr;
+        }
+        .clients_container_outer_element {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 10vh 5vw;
+            .clients_container_inner_element {
+                .clients_logo {
+                    text-align: center;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .clients_name {
+                    margin: 5vh 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
