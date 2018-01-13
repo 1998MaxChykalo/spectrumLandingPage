@@ -1,4 +1,5 @@
 
+import './../styles/numbers.scss'
 import './../styles/pricing.scss'
 
 import './../styles/clients.scss'
@@ -14,6 +15,8 @@ import "./../styles/header.scss";
 
 
 //SCRIPTS
+import './numbers';
+
 import './testimonials'
 
 import './lodash'

@@ -1,5 +1,14 @@
 $contact_button_color: rgb(255, 234, 42);
 
+.section_main_text {
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-align: center;
+  @media (max-width: 360px) {
+    font-size: 2rem;
+  }
+}
+
 .black_bordered_button {
   display: inline-block;
   background: #fff;
@@ -47,7 +56,7 @@ html {
   }
   @media screen and (min-width: 320px) {
     html {
-      font-size: calc(16px + 6 * ((100vw - 200px) / 680));
+      font-size: calc(14px + 6 * ((100vw - 200px) / 680));
     }
   }
   @media screen and (min-width: 1000px) {
