@@ -1,4 +1,5 @@
 
+import './../styles/cv.scss'
 import './../styles/numbers.scss'
 import './../styles/pricing.scss'
 
@@ -15,6 +16,8 @@ import "./../styles/header.scss";
 
 
 //SCRIPTS
+import './cv';
+
 import './numbers';
 
 import './testimonials'
