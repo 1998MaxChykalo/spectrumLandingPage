@@ -1,11 +1,4 @@
-
-
-
-//
-import './../styles/lightbox.scss'
-//
-
-import './../styles/gallery.scss'
+import './../styles/faq.scss'
 import './../styles/featured_product.scss'
 import './../styles/team.scss'
 import './../styles/cv.scss'
@@ -25,6 +18,8 @@ import "./../styles/header.scss";
 
 
 //SCRIPTS
+import './faq';
+
 import './lightbox';
 
 import './cv';
