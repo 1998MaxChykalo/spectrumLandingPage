@@ -1,3 +1,4 @@
+import './../styles/benefits.scss'
 import './../styles/faq.scss'
 import './../styles/featured_product.scss'
 import './../styles/team.scss'
