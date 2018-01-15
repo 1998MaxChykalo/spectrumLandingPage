@@ -1,3 +1,5 @@
+
+import './../styles/vacancy.scss'
 import './../styles/benefits.scss'
 import './../styles/faq.scss'
 import './../styles/featured_product.scss'

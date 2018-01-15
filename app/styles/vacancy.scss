@@ -1,0 +1,74 @@
+#vacancy {
+    padding: 0 20vw;
+    @media (max-width: 768px) {
+        padding: 0 10vw;
+    }
+    @media (max-width: 360px) {
+        padding: 0 5vw;
+    }
+    .section_main_text {
+        margin: 10vh 0;
+    }
+    .vacancies_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5vh 2vw;
+        .vacancy_element {
+            background: #eee;
+            padding: 5vh 4vw;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            @media (max-width: 768px) {
+                padding: 5vh 4vw 0 4vw;
+                grid-template-columns: 1fr;
+                .time_place_employment {
+                    border-left: none;
+                    margin: 5vh 0;
+                    padding: 0;
+                }
+            }
+            .about_vacancy {
+                flex: 2;
+                padding-right: 3vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                .position {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                .description {
+                    font-size: .7rem;
+                    line-height: 1.5;
+                    color: #777;
+                    margin-top: 5vh;
+                }
+            }
+            .time_place_employment {
+                padding: 5vh 0;
+                flex: 1;
+                border-left: 1px solid black;
+                display: flex;
+                padding-left: 3vw;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                p {
+                    line-height: 2;
+                    font-size: .7rem;
+                    color: #777;
+                    .fa {
+                        color: #000;
+                        margin-right: 2vw;
+                    }
+                    span.fa {
+                        width: 18px;
+                        height: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
