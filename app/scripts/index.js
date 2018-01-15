@@ -1,4 +1,5 @@
 
+import './../styles/ads.scss'
 import './../styles/vacancy.scss'
 import './../styles/benefits.scss'
 import './../styles/faq.scss'

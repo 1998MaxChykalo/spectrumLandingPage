@@ -1,0 +1,26 @@
+#limited_offer {
+    padding: 0 10vw;
+    background: url("./../images/addsbar_bg.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .limited_offer_container {
+        padding: 20vh 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            padding: 20vh 0vw;
+        }
+        .section_main_text {
+            line-height: 1.2;
+            @media (max-width:360px) {
+                font-size: 22px;
+            }
+        }
+        .contact_button {
+            margin: 5vh 0;
+        }
+    }
+}

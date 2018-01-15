@@ -1,15 +1,16 @@
 #vacancy {
     padding: 0 20vw;
     @media (max-width: 768px) {
-        padding: 0 10vw;
+        padding: 0 5vw;
     }
     @media (max-width: 360px) {
-        padding: 0 5vw;
+        padding: 0 2vw;
     }
     .section_main_text {
         margin: 10vh 0;
     }
     .vacancies_container {
+        margin: 10vh 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 5vh 2vw;
