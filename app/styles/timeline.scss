@@ -1,0 +1,31 @@
+#timeline {
+    margin: 10vh 0;
+    padding: 0 7vw;
+    .section_main_text {
+        margin: 5vh 0;
+    }
+    .timeline_container {
+        display: grid;
+        grid-gap: 5vh 3vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 360px) {
+            grid-template-columns: 1fr;
+        }
+        .timeline_element {
+            .timeline_date {
+                text-transform: uppercase;
+                font-weight: bold;
+                line-height: 1.5;
+                margin: 3vh 0;
+            }
+            .timeline_description {
+                font-size: .7rem;
+                color: #777;
+                line-height: 1.5;
+            }
+        }
+    }
+}
