@@ -1,0 +1,29 @@
+section#contact_us
+    .contact_us_container
+        .lamp
+            img(src=require("./../images/lamp.png"), alt="Lamp")
+        .section_main_text
+            p Contact Us
+        .form_container
+            form(action="#contact_us")
+                .form_field
+                    p
+                        input(type="text", placeholder="Name *", required="required")
+                        span.errorMessage This input field is required
+                    hr
+                .form_field
+                    p
+                        input(type="email", placeholder="E-mail *", required="required")
+                        span.errorMessage Please enter valid E-mail
+                    hr
+                .form_field
+                    p
+                        input(type="text", placeholder="Company")
+                    hr
+                .form_field
+                    p
+                        input(type="text", placeholder="Your message *" required="required")
+                        span.errorMessage This input field is required
+                    hr
+                .submit
+                    input(type="submit", value="Submit")

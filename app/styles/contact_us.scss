@@ -1,0 +1,79 @@
+#contact_us {
+    padding: 4vh 10vw;
+    .contact_us_container {
+        border: 1px solid #000;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0vh 10vw;
+        .lamp {
+            margin: 10vh 0 3vh 0;
+            display: flex;
+            justify-content: center;
+        }
+        .section_main_text {
+            margin-top: 3vh;
+        }
+        .form_container {
+            padding: 0 5vw;
+            display: flex;
+            justify-content: space-around;
+            form {
+                flex: 1;
+                margin: 7vh 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .form_field,
+                .submit {
+                    flex: 1;
+                    margin: 4vh 0;
+                }
+                .form_field {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        flex: 1;
+                        border: none;
+                        &:invalid {
+                            box-shadow: none;
+                        }
+                    }
+                    hr {
+                        width: 100%;
+                        border: none;
+                        border-top: 1px solid;
+                        &.valid {
+                            border-color: green;
+                        }
+                        &.invalid {
+                            border-color: red;
+                        }
+                    }
+                    p {
+                        display: flex;
+                        justify-content: space-around;
+                        .errorMessage {
+                            display: none;
+                            font-size: .6rem;
+                            color: red;
+                        }
+                    }
+                }
+                .submit {
+                    text-align: center;
+                    input {
+                        border: none;
+                        padding: 10px 45px;
+                        border-radius: 6px;
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 1rem;
+                        background-color: rgb(255, 234, 42);
+                    }
+                }
+            }
+        }
+    }
+}

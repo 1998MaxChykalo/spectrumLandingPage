@@ -1,4 +1,5 @@
 
+import './../styles/contact_us.scss'
 import './../styles/timeline.scss'
 import './../styles/ads.scss'
 import './../styles/vacancy.scss'
@@ -21,8 +22,9 @@ import "./../styles/main.scss";
 
 import "./../styles/header.scss";
 
-
 //SCRIPTS
+import './contact_us';
+
 import './faq';
 
 import './lightbox';
